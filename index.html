@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammed Sadath Ali - Full-Stack Developer</title>
+    
+    <!-- Meta Tags for SEO -->
+    <meta name="description" content="Personal portfolio of Mohammed Sadath Ali, a full-stack developer specializing in high-performance web applications with beautiful, modern design.">
+    <meta name="keywords" content="full-stack developer, front-end developer, web developer, portfolio, React, Node.js, JavaScript, modern UI/UX">
+    
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Google Fonts: Inter for body, Poppins for headlines -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Accessibility: Skip to main content -->
+    <a href="#main-content" class="skip-nav">Skip to main content</a>
+
+    <!-- Header & Global Navigation -->
+    <header class="global-nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#hero">MSA</a>
+            </div>
+            <nav class="nav-menu-desktop">
+                <ul class="nav-items">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#work" class="nav-link">Work</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#contact" class="nav-link btn btn-contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-controls">
+                <!-- Theme Toggle Button -->
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+                    <span class="theme-toggle-track">
+                        <span class="theme-toggle-icons">
+                            <span class="theme-icon-sun" aria-hidden="true">☀️</span>
+                            <span class="theme-icon-moon" aria-hidden="true">🌙</span>
+                        </span>
+                        <span class="theme-toggle-thumb"></span>
+                    </span>
+                </button>
+                <!-- Hamburger Menu Button (Mobile) -->
+                <button id="hamburger-btn" class="hamburger-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Menu -->
+    <div id="mobile-menu" class="mobile-menu" role="dialog" aria-modal="true" aria-hidden="true">
+        <nav>
+            <ul class="mobile-nav-items">
+                <li><a href="#about" class="mobile-nav-link">About</a></li>
+                <li><a href="#work" class="mobile-nav-link">Work</a></li>
+                <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+                <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Main Content Wrapper -->
+    <main id="main-content">
+
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-headline">
+                    <span class="headline-line">I design and build beautiful,</span>
+                    <span class="headline-line">high-performance</span>
+                    <span class="headline-line">web applications.</span>
+                </h1>
+                <p class="hero-subheadline">
+                    Full-stack developer with a passion for blending clean code with beautiful design. Creating user-centric solutions that are both technically robust and visually stunning.
+                </p>
+                <div class="hero-actions">
+                    <a href="#work" class="btn btn-primary btn-large">View My Work</a>
+                    <a href="resume.pdf" class="btn btn-secondary btn-large" target="_blank" rel="noopener noreferrer">View My Resume</a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <a href="#about" class="scroll-link" aria-label="Scroll to about section">
+                    <span class="scroll-text">Scroll Down</span>
+                    <span class="scroll-arrow"></span>
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-image-wrapper">
+                        <!-- IMPORTANT: Replace with your actual photo URL -->
+                        <img src="https://i.ibb.co/L5T1x6w/photo.jpg" alt="A portrait of Mohammed Sadath Ali" class="about-image">
+                        <div class="about-image-overlay"></div>
+                    </div>
+                    <div class="about-text">
+                        <h2 class="section-title">About Me</h2>
+                        <p class="section-paragraph">
+                            I'm Mohammed Sadath Ali, a full-stack developer with over 2 years of experience building exceptional digital experiences. My work is driven by a commitment to clean, maintainable code, seamless accessibility, and thoughtful design.
+                        </p>
+                        <p class="section-paragraph">
+                            From robust back-end architecture with Node.js to polished front-end interfaces with React, I deliver solutions that not only work flawlessly but also feel great to use.
+                        </p>
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">2<span class="stat-plus">+</span></span>
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">15<span class="stat-plus">+</span></span>
+                                <span class="stat-label">Projects Completed</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">5</span>
+                                <span class="stat-label">Core Technologies</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Section -->
+        <section id="work" class="work-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Featured Work</h2>
+                    <p class="section-subtitle">A selection of projects showcasing modern technology and thoughtful design.</p>
+                </div>
+                <div class="project-grid">
+                    <!-- Project 1: Large Card -->
+                    <div class="project-card large">
+                        <div class="project-image-wrapper">
+                            <!-- IMPORTANT: Replace with your project image -->
+                            <img src="https://i.ibb.co/Yy7PC1z/Web-Auto.jpg" alt="A screenshot of the Web Automation System project" class="project-image" loading="lazy">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Web Automation System</h3>
+                            <p class="project-description">Streamlining workflows with intelligent automation and modern AI integration.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">TypeScript</span>
+                            </div>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="View live site for Web Automation System" target="_blank" rel="noopener noreferrer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                                </a>
+                                <a href="#" class="project-link" aria-label="View source code for Web Automation System" target="_blank" rel="noopener noreferrer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <div class="project-image-wrapper">
+                            <!-- IMPORTANT: Replace with your project image -->
+                            <img src="https://i.ibb.co/yQGqjC5/e-com.jpg" alt="A screenshot of the E-commerce Platform project" class="project-image" loading="lazy">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">E-commerce Platform</h3>
+                            <p class="project-description">A modern store with advanced features.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Next.js</span>
+                                <span class="tech-tag">Stripe</span>
+                            </div>
+                        </div>
+                        <div class="project-overlay">
+                           <div class="project-links">
+                                <a href="#" class="project-link" aria-label="View live site for E-commerce Platform" target="_blank" rel="noopener noreferrer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                                </a>
+                                <a href="#" class="project-link" aria-label="View source code for E-commerce Platform" target="_blank" rel="noopener noreferrer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <div class="project-image-wrapper">
+                            <!-- IMPORTANT: Replace with your project image -->
+                            <img src="https://i.ibb.co/Gdv04QG/Dashboard.jpg" alt="A screenshot of the Analytics Dashboard project" class="project-image" loading="lazy">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Analytics Dashboard</h3>
+                            <p class="project-description">Real-time visualization and metrics.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Vue.js</span>
+                                <span class="tech-tag">D3.js</span>
+                            </div>
+                        </div>
+                         <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="View live site for Analytics Dashboard" target="_blank" rel="noopener noreferrer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                                </a>
+                                <a href="#" class="project-link" aria-label="View source code for Analytics Dashboard" target="_blank" rel="noopener noreferrer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-cta">
+                    <a href="#" class="btn btn-secondary">View All Projects</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Skills & Technologies</h2>
+                    <p class="section-subtitle">The tools and technologies I use to bring ideas to life.</p>
+                </div>
+                <div class="skills-content">
+                    <!-- Frontend Skills -->
+                    <div class="skill-category">
+                        <h3 class="category-title">Frontend</h3>
+                        <ul class="skills-list">
+                            <li>React & Next.js</li>
+                            <li>TypeScript</li>
+                            <li>HTML5 & CSS3</li>
+                            <li>Tailwind CSS</li>
+                            <li>Web Performance</li>
+                        </ul>
+                    </div>
+                    <!-- Backend Skills -->
+                    <div class="skill-category">
+                        <h3 class="category-title">Backend</h3>
+                        <ul class="skills-list">
+                            <li>Node.js & Express</li>
+                            <li>Python & Django</li>
+                            <li>REST & GraphQL APIs</li>
+                            <li>Database Design</li>
+                            <li>Authentication</li>
+                        </ul>
+                    </div>
+                    <!-- Tools & Others -->
+                    <div class="skill-category">
+                        <h3 class="category-title">Tools & More</h3>
+                        <ul class="skills-list">
+                            <li>Git & GitHub</li>
+                            <li>Docker & CI/CD</li>
+                            <li>AWS & Cloud</li>
+                            <li>Figma</li>
+                            <li>Agile Methodologies</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container contact-container">
+                 <h2 class="contact-headline">Let's create something amazing together.</h2>
+                 <p class="contact-subheadline">Ready to start a project or just want to connect? Feel free to reach out.</p>
+                 <a href="mailto:your-email@example.com" class="btn btn-primary btn-large">Say Hello</a>
+                 <div class="contact-social-links">
+                     <a href="#" class="social-link" aria-label="My GitHub profile" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        <span>GitHub</span>
+                    </a>
+                     <a href="#" class="social-link" aria-label="My LinkedIn profile" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                         <span>LinkedIn</span>
+                    </a>
+                     <a href="#" class="social-link" aria-label="My Twitter profile" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                        <span>Twitter</span>
+                    </a>
+                 </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="global-footer">
+        <div class="container footer-content">
+            <p>&copy; 2025 Mohammed Sadath Ali. All Rights Reserved.</p>
+            <a href="#hero" class="back-to-top-link">
+                <span>Back to Top</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+                </svg>
+            </a>
+        </div>
+    </footer>
+    
+    <!-- Defer script loading for better performance -->
+    <script src="script.js" defer></script>
+</body>
+</html>
